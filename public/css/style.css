@@ -34,3 +34,17 @@ header a{
     text-decoration: none;
     margin-right: 15px;
 }
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+form button{
+    cursor:pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    border-radius: 1px;
+    color: white;
+    padding: 8px;
+}
