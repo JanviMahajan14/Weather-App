@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const geocoding = require('./utils/geocoding');
 const forecast = require('./utils/forecast');
 const app = express();
+const path = process.env.port || 8000
 
 // Define paths for express config
 const publicDirectoryPath = path.join('__dirname',"../public");
@@ -71,6 +72,6 @@ app.use('*',(req,res)=>{
     })
 })
 
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log("I am running at port 8000")
 })  
